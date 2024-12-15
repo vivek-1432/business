@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Skin Care</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e6ffe6, #ffffff);
+            color: #333;
+        }
+
+        header {
+            background: rgba(34, 139, 34, 0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f0fdf0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .section h2 {
+            color: #228B22;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .section ul {
+            padding-left: 25px;
+            list-style: disc;
+        }
+
+        .section ul li {
+            margin: 10px 0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in, transform 1s ease-in;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #228B22;
+            color: white;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer ul li {
+            display: inline;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        footer p {
+            margin: 10px 0 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Herbal Skin Care</h1>
+    </header>
+
+    <div class="container">
+        <!-- How We Work Section -->
+        <div class="section fade-in" id="how-we-work">
+            <h2>How We Work for Your Skin</h2>
+            <p>At our salon, we prioritize the health and natural beauty of your skin. We use pure Aloe Vera properties to nourish and rejuvenate your skin, avoiding any chemical-based products. Each step in our process is designed to align with our commitment to herbal care and sustainability.</p>
+        </div>
+
+        <!-- Chemical-Free Promise Section -->
+        <div class="section fade-in" id="chemical-free-promise">
+            <h2>Our Chemical-Free Promise</h2>
+            <p>We believe in the power of nature. That’s why we use only pure herbal ingredients, ensuring a toxin-free experience. From Aloe Vera to essential oils, our treatments are carefully curated to provide the best care for your skin without any harsh chemicals.</p>
+        </div>
+
+        <!-- Benefits of Natural Products Section -->
+        <div class="section fade-in" id="benefits">
+            <h2>Benefits of Natural Products</h2>
+            <ul>
+                <li>Gentle on the skin and suitable for all skin types.</li>
+                <li>Rich in vitamins and antioxidants for healthy skin.</li>
+                <li>Promotes natural hydration and glow.</li>
+                <li>Prevents skin irritation and allergic reactions.</li>
+                <li>Eco-friendly and sustainable.</li>
+                <li>Helps in long-term skin health and rejuvenation.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p>&copy; 2024 Herbal Skin Care. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Fade-in effect for sections
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".fade-in");
+            sections.forEach((section, index) => {
+                setTimeout(() => {
+                    section.classList.add("show");
+                }, index * 500); // Delay for each section
+            });
+        });
+    </script>
+</body>
+</html>

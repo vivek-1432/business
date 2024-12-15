@@ -1,0 +1,233 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaving & Beard Trimming</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgb(255, 255, 255);
+            color: #ff4500;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff4500;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #ff4500;
+        }
+
+        .beard-section-container {
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .beard-section h2 {
+            color: #ff4500;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .beard-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 120px;
+            justify-content: center;
+        }
+
+        .beard-type {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 400px;
+            height: 530px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .beard-type:hover {
+            transform: scale(1.05);
+        }
+
+        .beard-type img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 2px solid #ff4500;
+        }
+
+        .beard-type h3 {
+            margin: 10px 0;
+            color: #ff4500;
+        }
+
+        .beard-type p {
+            padding: 0 10px;
+            font-size: 0.9em;
+            color: #000000;
+        }
+
+        .toggle-info {
+            background-color: #ff4500;
+            color: rgb(52, 51, 51);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5em;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .toggle-info:hover {
+            background-color: #e63900;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shaving & Beard Trimming</h1>
+    </header>    
+
+    <div class="container">
+        <!-- Beard Styles Section -->
+        <div class="beard-section-container">
+            <h2>Beard Styles</h2>
+            <div class="beard-section">
+                <!-- Beard Type 1 -->
+                <div class="beard-type">
+                    <img src="images/full beared.jpg" alt="Full Beard">
+                    <h3>Full Beard</h3>
+                    <p>A classic full beard for a rugged and masculine appearance.</p>
+                </div>
+                <!-- Additional Beard Types -->
+                <div class="beard-type">
+                    <img src="images/goatee.jpg" alt="Goatee">
+                    <h3>Goatee</h3>
+                    <p>A versatile goatee style that suits almost any face shape.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/stubble.jpg" alt="Stubble">
+                    <h3>Stubble</h3>
+                    <p>Achieve the perfect stubble for a casual yet stylish look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/van-dyke.jpg" alt="Van Dyke">
+                    <h3>Van Dyke</h3>
+                    <p>A stylish Van Dyke beard for a sophisticated appearance.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/balbo.jpg" alt="Balbo">
+                    <h3>Balbo</h3>
+                    <p>A neat and edgy Balbo style for a modern look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/Chin Strap.jpg" alt="Chin Strap">
+                    <h3>Chin Strap</h3>
+                    <p>A defined chin strap for a sharp and trendy look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/circle.jpg" alt="Circle Beard">
+                    <h3>Circle Beard</h3>
+                    <p>A circular beard style that blends elegance with simplicity.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/short box.jpg" alt="Short Box">
+                    <h3>Short Box</h3>
+                    <p>A tidy and versatile short box beard for all occasions.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/anchor.jpg" alt="Anchor">
+                    <h3>Anchor</h3>
+                    <p>An anchor-shaped beard style for a unique and bold look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/mutton chops.jpg" alt="Mutton Chops">
+                    <h3>Mutton Chops</h3>
+                    <p>A retro mutton chops style for a statement appearance.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/Gunslinger.jpg" alt="Gunslinger">
+                    <h3>Gunslinger Beard & Mustache</h3>
+                    <p>A bold gunslinger style for a confident personality.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/clock.jpg" alt="5 O'Clock Shadow">
+                    <h3>5 O'Clock Shadow</h3>
+                    <p>A subtle shadow beard for a casual yet stylish look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/soul.jpg" alt="Soul Patch">
+                    <h3>Soul Patch</h3>
+                    <p>A minimal soul patch for a clean and sleek appearance.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/garibaldi.jpg" alt="Garibaldi">
+                    <h3>Garibaldi</h3>
+                    <p>A full and rounded Garibaldi beard for a robust look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/verd.jpg" alt="The Verdi">
+                    <h3>The Verdi</h3>
+                    <p>A stylish Verdi beard for a touch of elegance.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/Hollywoodian.jpg" alt="The Hollywoodian">
+                    <h3>The Hollywoodian</h3>
+                    <p>A trendy Hollywoodian style for a red carpet appearance.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/amish.jpg" alt="Amish">
+                    <h3>Amish</h3>
+                    <p>An Amish beard for a classic and traditional look.</p>
+                </div>
+                <div class="beard-type">
+                    <img src="images/box.jpg" alt="Short Boxed Beard">
+                    <h3>The Short Boxed Beard</h3>
+                    <p>A sharp short boxed beard for an effortlessly clean style.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.beard-type');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.transform = "translateY(0)";
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
