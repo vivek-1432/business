@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Salon - Services</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: transparent;
+            color: #000000;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+       
+      
+/* General Header Styles */
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 40px;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fc0404;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 170px;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #fc0404;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: fixed;
+        top: 60px;
+        right: 10px;
+        width: 100px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 2000; 
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+        /* Slider */
+        .slider {
+            position: relative;
+            height: 550px;
+            overflow: hidden;
+        }
+
+        .slider img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slider img.active {
+            opacity: 1;
+        }
+
+        /* Featured Services */
+        .featured {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .featured h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff0000;
+        }
+
+        .featured-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 200px;
+        }
+
+        .service {
+            width: 600px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .service img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 15px;
+        }
+
+        .service-content h3 {
+            margin-bottom: 10px;
+            color: #ff0000;
+            font-size: 2em;
+        }
+
+        .service-content p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        /* Full-Width Section */
+        .full-width-section {
+            text-align: center;
+            padding: 0px;
+            background-color: #fafafa;
+            color: #51ee18;
+        }
+
+        .full-width-section img {
+            width: 100%;
+            height: 600px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .service-content .my-button a{
+            color: #fff;
+            font-weight: bold;
+        }
+        .service-content .my-button {
+    /* Button styles */
+    background-color: #0f0f0f;
+    border: none;
+    color: #fff; /* Change the text color to white */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.service-content .my-button:hover {
+    background-color: #ff6969d8;
+}
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff0000;
+        }
+        .my-button {
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.my-button a{
+    color: rgb(255, 255, 255);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>VK Salon</h1>
+        </div>
+        <div class="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <div class="slider">
+        <img src="images/slide3.jpg" alt="Slide 1" class="active">
+        <img src="images/herb2.jpg" alt="Slide 2">
+        <img src="images/back3.jpg" alt="Slide 3">
+        <img src="images/slide4.jpg" alt="Slide 4">
+      </div>
+
+    <!-- Featured Services -->
+    <section class="featured">
+        <h2>Our Services</h2>
+        <div class="featured-container">
+            <div class="service">
+                <img src="images/slide1.jpg" alt="Haircut">
+                <div class="service-content">
+                    <h3>Haircuts</h3>
+                    <p>Experience the Art of Hair Cutting: From Classic to Trendy, We've Got You Covered.</p>
+                    <button class="my-button"><a href="/haircut.html">More About Haircut...></a></button>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/shaving1.jpg" alt="Shaving">
+                <div class="service-content">
+                    <h3>Shaving/ <br>Beared Styling</h3>
+                    <p>Personalized Shaving & Beard Styling to Enhance Your Look.</p>
+                    <button class="my-button"><a href="/clean.html">More About Shave...></a></button>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/fmassage.jpg" alt="Facial">
+                <div class="service-content">
+                    <h3>Face Massage</h3>
+                    <p>Rejuvenate your skin with luxury facials.</p>
+                    <button class="my-button"><a href="/face_massage.html">More About Face Massage...></a></button>
+                </div>
+            </div>
+            <div class="service">
+                <img src="images/head.jpg" alt="Massage">
+                <div class="service-content">
+                    <h3>Head Massage</h3>
+                    <p>Relax with our soothing head massages.</p>
+                    <button class="my-button"><a href="/head.html">More About head Massage...></a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full-Width Section -->
+    <section class="full-width-section">
+        <img src="images/herb.webp" alt="Spa">
+        <h2>Herbal Massage</h2>
+        <p>Indulge in a Herbal Massage and Unlock Your Skin's Natural Beauty</p>
+        <button class="my-button"><a href="/herbal.html">More About Herbal massage...></a></button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VK Salon. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Automatic Slider
+        const slides = document.querySelectorAll('.slider img');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    // Toggle the menu on click
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Optional: Close the menu when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!navLinks.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+            navLinks.classList.remove('active');
+        }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircuts</title>
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #020202;
+        }
+        header {
+            background: rgb(255, 255, 255);
+            color: #ff4500;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff4500;
+            height: 50px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #fe0303;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 30px 20px;
+
+            max-width: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .haircut-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .haircut-card {
+            width: 350px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .haircut-card img {
+            width: 100%;
+            height:450px;
+            object-fit: cover;
+        }
+
+        .haircut-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #ff4500;
+        }
+
+        .haircut-card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #0a0a0a;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Types of Haircuts</h1>
+    </header>  
+    <div class="section">
+        <h2>Classic Haircuts</h2>
+        <div class="haircut-container">
+            <div class="haircut-card">
+                <img src="images/buzz.jpg" alt="Classic Haircut 1">
+                <h3>Buzz Cut</h3>
+                <p>A timeless, low-maintenance style perfect for any season.</p>
+                <a href="https://www.google.com/search?q=buzz+cut+hairstyle+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=
+                2&biw=1536&bih=730&sxsrf=ADLYWIKmZLOnD-EWXrfTDIf6Xemd1bp8_A%3A1733831524427&ei=ZCtYZ6zgGcKhseMPi8iziA4&oq=buzz+cut+hairstyl
+                e+&gs_lp=EgNpbWciE2J1enogY3V0IGhhaXJzdHlsZSAqAggBMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQy
+                BRAAGIAEMgUQABiABEj-ElAtWC1wAXgAkAEAmAGUAaABlAGqAQMwLjG4AQHIAQD4AQGYAgKgAqYBwgINEAAYgAQYsQMYQxiKBcICBhAAGAcYHpgDAIgGAZIHAzEuMa
+                AH0QU&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/side part.jpg" alt="Classic Haircut 2">
+                <h3>Side Part</h3>
+                <p>Elegant and professional, ideal for formal settings.</p>
+                <a href="https://www.google.com/search?q=side+part+haircut&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=1536&
+                bih=730&sxsrf=ADLYWIKEcjyZabdKzc1J6_pR3dk0C38U_w%3A1733831536603&ei=cCtYZ6y-JNGsseMPuqeEgA4&oq=side&gs_lp=EgNpbWciBHNpZGUqAg
+                gBMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFMgoQABiABB
+                hDGIoFMgoQABiABBhDGIoFMgoQABiABBhDGIoFSIFEUKwcWLYmcAF4AJABAJgBiQGgAZUEqgEDMC40uAEByAEA-AEBmAIFoAK6BKgCCsICBxAjGCcY6gLCAgQQIx
+                gnwgILEAAYgAQYsQMYgwHCAg4QABiABBixAxiDARiKBZgDCZIHAzEuNKAHwBk&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/comb over.jpg" alt="Classic Haircut 3">
+                <h3>Comb Over</h3>
+                <p>A versatile and polished look for all occasions.</p>
+                <a href="https://www.google.com/search?q=comb+over+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=
+                2&biw=1536&bih=730&sxsrf=ADLYWIIFkh4XK4xF_bzX_Yu_p4uE8syOSg%3A1733831932045&ei=_CxYZ_SeAo33seMPiPvmmQU&ved=0ahUKEwj0jKOjk5
+                2KAxWNe2wGHYi9OVMQ4dUDCBE&uact=5&oq=comb+over+haircut+for+men&gs_lp=EgNpbWciGWNvbWIgb3ZlciBoYWlyY3V0IGZvciBtZW4yBRAAGIAEMg
+                YQABgFGB4yBhAAGAUYHkjmKlDNFViZI3ABeACQAQCYAYYBoAHRB6oBAzAuOLgBA8gBAPgBAZgCCaACgwjCAgoQABiABBhDGIoFwgIGEAAYBxgewgIEEAAYHpgDA
+                IgGAZIHAzEuOKAHxCM&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/Pompadour.jpg" alt="Classic Haircut 4">
+                <h3>Pompadour</h3>
+                <p>Classic volume with a modern twist for a bold statement.</p>
+                <a href="https://www.google.com/search?q=pompadour+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&
+                biw=1536&bih=730&sxsrf=ADLYWILWj54GbC4E_DLH-mra9T-DvpX9Ig%3A1733831942680&ei=Bi1YZ4OXKbKZseMPgszPsAU&oq=pompa+haircut+for+m
+                en&gs_lp=EgNpbWciFXBvbXBhIGhhaXJjdXQgZm9yIG1lbioCCAAyBhAAGAcYHjIGEAAYBxgeMggQABgHGAgYHjIIEAAYBRgHGB4yCBAAGAUYBxgeMggQABgFGA
+                cYHjIIEAAYBRgHGB5IhihQkQZYiRxwAXgAkAEAmAGKAaABzQuqAQQwLjEyuAEByAEA-AEBmAIHoAKmBsICChAAGIAEGEMYigXCAgYQABgIGB7CAg0QABiABBixA
+                xhDGIoFwgIFEAAYgASYAwCIBgGSBwMxLjagB9U8&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/french crop.jpg" alt="Classic Haircut 5">
+                <h3>French Crop</h3>
+                <p>A neat and tidy look that's easy to style and maintain.</p>
+                <a href="https://www.google.com/search?q=french+crop+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&
+                biw=1536&bih=730&sxsrf=ADLYWIIYMUmtGh15qarxoOdg5zoNduol8w%3A1733831996622&ei=PC1YZ8_FJcmgseMPo6uYqAU&oq=french+haircut+for+men
+                &gs_lp=EgNpbWciFmZyZW5jaCBoYWlyY3V0IGZvciBtZW4qAggAMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgUQABiABDIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjI
+                GEAAYBxgeMgYQABgHGB4yBhAAGAcYHkiVK1DCA1jGHXABeACQAQCYAYYBoAGODaoBBDAuMTS4AQHIAQD4AQGYAgmgAqIIwgIKEAAYgAQYQxiKBcICBhAAGAgYHsICC
+                BAAGAcYCBgewgIIEAAYBRgHGB7CAg0QABiABBixAxhDGIoFmAMAiAYBkgcDMS44oAepUg&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/flat top.jpg" alt="Classic Haircut 6">
+                <h3>Flat Top</h3>
+                <p>Clean, sharp lines for a confident and bold look.</p>
+                <a href="https://www.google.com/search?q=flat+top+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw
+                =1536&bih=730&sxsrf=ADLYWILkm_1eWBH8qbo4qs3f8HJkimLFMw%3A1733832038798&ei=Zi1YZ4y0MJyaseMP8IC_kAc&ved=0ahUKEwiM_5bWk52KAxUcTW
+                wGHXDAD3IQ4dUDCBE&uact=5&oq=flat+top+haircut+for+men&gs_lp=EgNpbWciGGZsYXQgdG9wIGhhaXJjdXQgZm9yIG1lbjIFEAAYgAQyBhAAGAgYHjIGEA
+                AYCBgeMgYQABgIGB5IvyVQpQRYvx5wAngAkAEAmAGOAaABghGqAQQwLjE4uAEDyAEA-AEBmAIKoAKeCMICChAAGIAEGEMYigXCAgYQABgHGB7CAggQABgHGAgYHsI
+                CDRAAGIAEGLEDGEMYigXCAgoQABgHGAgYChgewgIIEAAYBRgHGB6YAwCIBgGSBwMyLjigB7lf&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/caesar.jpg" alt="Classic Haircut 7">
+                <h3>Caesar Cut</h3>
+                <p>A simple, short style with a hint of Roman elegance.</p>
+                <a href="https://www.google.com/search?q=caesar+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=
+                1536&bih=730&sxsrf=ADLYWIKsQLR8ES1clT6Ym5Nd4N1TsgoyUw%3A1733832081083&ei=kS1YZ9jXBJ2dseMP2fa-wQ8&ved=0ahUKEwiY5Kvqk52KAxWdT
+                mwGHVm7L_gQ4dUDCBE&uact=5&oq=caesar+haircut+for+men&gs_lp=EgNpbWciFmNhZXNhciBoYWlyY3V0IGZvciBtZW5I1mpQ-AdYxVxwA3gAkAEAmAG3A
+                aAB1g6qAQQwLjE1uAEDyAEA-AEBmAIFoAKPBMICBRAAGIAEwgIGEAAYCBgewgIGEAAYBxgewgIIEAAYBxgIGB7CAg0QABiABBixAxhDGIoFwgIIEAAYBxgKGB6Y
+                AwCIBgGSBwMxLjSgB8Uy&sclient=img">click here...></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modern Haircuts Section -->
+    <div class="section">
+        <h2>Modern Haircuts</h2>
+        <div class="haircut-container">
+            <div class="haircut-card">
+                <img src="images/taper fade.jpg" alt="Modern Haircut 1">
+                <h3>Taper Fade</h3>
+                <p>Sharp gradients for a sleek and contemporary style.</p>
+                <a href="https://www.google.com/search?q=taper+fade+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm
+                =2&biw=1536&bih=730&sxsrf=ADLYWIKKEMg3DXCB6eG5tC-JwXxo47MPdA%3A1733832126441&ei=vi1YZ_LGGoGgnesP79WBsQ8&oq=taper+haircut+
+                for+men&gs_lp=EgNpbWciFXRhcGVyIGhhaXJjdXQgZm9yIG1lbioCCAAyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4
+                yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHkiZNlC9DVi0IXABeACQAQCYAZMCoAGkDKoBBTAuOS4xuAEByAEA-AEBmAIFoAL6BsICDRAAGIAEGLEDG
+                EMYigXCAgUQABiABMICChAAGIAEGEMYigWYAwCIBgGSBwUwLjQuMaAHgzE&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/undercut.jpg" alt="Modern Haircut 2">
+                <h3>Undercut</h3>
+                <p>Bold and edgy, perfect for those who love to stand out.</p>
+                <a href="https://www.google.com/search?q=undercut+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw
+                =1536&bih=730&sxsrf=ADLYWIL2lflSYvDj7-DGeYK3Ci2Madh2Ew%3A1733834787120&ei=IzhYZ9f4Bq761e8PrOeXCA&oq=un+haircut+for+men&gs_lp=
+                EgNpbWciEnVuIGhhaXJjdXQgZm9yIG1lbioCCAAyBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeM
+                gYQABgHGB4yBhAAGAcYHkjGEVAAWJMCcAB4AJABAJgBjgGgAZACqgEDMC4yuAEByAEA-AEBmAICoAKpApgDAJIHAzAuMqAHsQw&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/fade.jpg" alt="Modern Haircut 3">
+                <h3>Quiff</h3>
+                <p>Stylish volume for a confident, modern appearance.</p>
+                <a href="https://www.google.com/search?q=quiff+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=1536
+                &bih=730&sxsrf=ADLYWIImJUU6oownZXD0oBOSickDhNMguA%3A1733834841583&ei=WThYZ5KdI4vY1e8P-valoQ4&ved=0ahUKEwjSrdOOnp2KAxULbPUHHXp7
+                KeQQ4dUDCBE&uact=5&oq=quiff+haircut+for+men&gs_lp=EgNpbWciFXF1aWZmIGhhaXJjdXQgZm9yIG1lbjIGEAAYBxgeMgUQABiABDIGEAAYBxgeMgYQABgF
+                GB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5I8CVQ1ARY3h5wAXgAkAEAmAHuAaABoAyqAQUwLjkuMbgBA8gBAPgBAZgCBq
+                ACqAbCAgoQABiABBhDGIoFwgIIEAAYBxgIGB7CAg0QABiABBixAxhDGIoFmAMAiAYBkgcDMS41oAeWQQ&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/mohawk1.jpg" alt="Modern Haircut 4">
+                <h3>Mohawk</h3>
+                <p>Expressive and daring, ideal for a bold statement.</p>
+                <a href="https://www.google.com/search?q=mohawk+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=15
+                36&bih=730&sxsrf=ADLYWILGcEg1F6Z4lMFflwFsScxIXlBedQ%3A1733834890521&ei=ijhYZ9DDH5yzvr0P65KygAg&oq=moha+haircut+for+men&gs_lp=E
+                gNpbWciFG1vaGEgaGFpcmN1dCBmb3IgbWVuKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMggQABgHGAo
+                YHjIIEAAYBxgIGB4yCBAAGAcYCBgeSN4rUNIGWPgecAF4AJABAJgB-QGgAYsLqgEFMC43LjK4AQHIAQD4AQGYAgigAtAJwgIKEAAYgAQYQxiKBcICCBAAGAUYBxgewg
+                INEAAYgAQYsQMYQxiKBcICBRAAGIAEmAMAiAYBkgcFMS41LjKgB686&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/man bun.jpg" alt="Modern Haircut 5">
+                <h3>Man Bun</h3>
+                <p>Chic and versatile, blending tradition with modernity.</p>
+                <a href="https://www.google.com/search?q=manbun+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=153
+                6&bih=730&sxsrf=ADLYWIJSig681QW0Enj9Ml379fGrfmjz9A%3A1733834931969&ei=szhYZ4fpOub21e8P7eS14Qc&ved=0ahUKEwjHjuC5np2KAxVme_UHHW1y
+                LXwQ4dUDCBE&uact=5&oq=manbun+haircut+for+men&gs_lp=EgNpbWciFm1hbmJ1biBoYWlyY3V0IGZvciBtZW5I5yhQvwZYmyNwAngAkAEAmAHqAaAB-QuqAQU
+                wLjkuMbgBA8gBAPgBAZgCBqACngbCAgoQABiABBhDGIoFwgIGEAAYBxgewgIIEAAYBxgKGB7CAgUQABiABMICCBAAGAcYCBgewgINEAAYgAQYsQMYQxiKBcICCBAAG
+                AUYBxgewgIGEAAYCBgemAMAiAYBkgcFMi4zLjGgB-Qs&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/slope.jpg" alt="Modern Haircut 6">
+                <h3>Slope</h3>
+                <p>Messy yet stylish, perfect for a casual, cool look.</p>
+                <a href="https://www.google.com/search?q=slope+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=153
+                6&bih=730&sxsrf=ADLYWII6f3jYbvoNy36dSq3iDwZHbGidhg%3A1733834985611&ei=6ThYZ5bCIObgvr0P_4WcoAo&ved=0ahUKEwjW2qXTnp2KAxVmsK8BHf8C
+                B6QQ4dUDCBE&uact=5&oq=slope+haircut+for+men&gs_lp=EgNpbWciFXNsb3BlIGhhaXJjdXQgZm9yIG1lbjIFEAAYgAQyBRAAGIAEMgYQABgHGB4yBhAAGAcYH
+                jIGEAAYBxgeMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIIEAAYBxgIGB5IoB1QtAhY1RpwAXgAkAEAmAHbAaAByQuqAQUwLjkuMbgBA8gBAPgBAZgCBKAC2ATC
+                Ag0QABiABBixAxhDGIoFmAMAiAYBkgcDMC40oAelNg&sclient=img">click here...></a>
+            </div>
+            <div class="haircut-card">
+                <img src="images/spiky.jpg" alt="Modern Haircut 7">
+                <h3>Spiky Hair</h3>
+                <p>Dynamic and fun, ideal for youthful energy.</p>
+                <a href="https://www.google.com/search?q=spiky+haircut+for+men&sca_esv=adafaf889a5483d7&rlz=1C1CHBD_enIN965IN965&udm=2&biw=1536
+                &bih=730&sxsrf=ADLYWILRBLnoLiCBmkN0lIVNcm0q4FTXfg%3A1733835021317&ei=DTlYZ4X2EvrT1e8PptmkkAk&oq=spiky+haircut+for+men&gs_lp=EgN
+                pbWciFXNwaWt5IGhhaXJjdXQgZm9yIG1lbioCCAEyBhAAGAcYHjIFEAAYgAQyBhAAGAcYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAgYHjIGEAAYCBgeMgYQABgIGB4yCB
+                AAGAgYChgeMgYQABgIGB5InzFQiwZY-xpwAngAkAEBmAHnAaAB5AqqAQUwLjguMbgBAcgBAPgBAZgCCKACpwfCAgoQABiABBhDGIoFwgIHEAAYgAQYCsICDRAAGIAEG
+                LEDGEMYigXCAggQABgHGAgYHpgDAIgGAZIHAzIuNqAH3jo&sclient=img">click here...></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
