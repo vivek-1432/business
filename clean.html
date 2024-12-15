@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaving Services</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("images/classic.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 1700px;
+            height: 757px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            opacity: 0;
+            visibility: hidden;
+            display: inline-block;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 5px 5px;
+            padding: 5px 25px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff0000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #e63900;
+        }
+
+        .hidden-info {
+            display: none;
+            margin-top: 20px;
+            background-color: rgba(8, 8, 8, 0.8);
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .hidden-info h3 {
+            color: #ff4500;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.querySelector('.container');
+            const content = container.querySelectorAll('.content');
+
+            let delay = 0;
+            content.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.opacity = 1;
+                    el.style.visibility = 'visible';
+                }, delay);
+                delay += 500; // 500ms delay between each word
+            });
+        });
+
+        function toggleInfo() {
+            const info = document.getElementById('clean-shave-info');
+            info.style.display = info.style.display === 'none' || info.style.display === '' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="content">Shaving Services</h1>
+        <p class="content">Choose your preferred option below:</p>
+        <button class="button content" onclick="toggleInfo()">Clean Shave</button>
+        <a href="/shave.html" class="button content">More Shaving Options</a>
+
+        <div id="clean-shave-info" class="hidden-info content">
+            <h3>Clean Shave Services</h3>
+            <p>Experience a professional clean shave using premium tools and techniques. We ensure smooth, refreshing results that leave you looking sharp and feeling confident.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Massage</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background: #fcfdfd;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff4500;
+    height: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #fc0505;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+/* Massage Types Section */
+.massage-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px;
+    justify-content: center;
+}
+
+.massage-type {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 450px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.massage-type:hover {
+    transform: scale(1.05);
+}
+
+.massage-type img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.massage-type h3 {
+    margin: 15px 0 10px;
+    color: #23831e;
+}
+
+/* Benefits Section */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+.benefit img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Massage Process Section */
+.massage-process {
+    position: relative;
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+    background-image: url(images/massage1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    margin: 30px 0;
+}
+
+.massage-process:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.massage-process h2 {
+    position: relative;
+    font-size: 2.5em;
+    color: #fbfbfb;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.process-container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.process-container ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.process-container li {
+    font-size: 1.4em;
+    margin: 15px 0;
+    color: #f8f8f8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: transparent;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.process-container li:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .massage-type {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .massage-process h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .massage-type {
+        flex: 1 1 100%;
+    }
+
+    .benefit {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefit img {
+        margin: 0 0 15px 0;
+    }
+
+    .massage-process h2 {
+        font-size: 1.8em;
+    }
+
+    .process-container li {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .massage-process h2 {
+        font-size: 1.5em;
+    }
+
+    .process-container {
+        padding: 10px;
+    }
+
+    .process-container li {
+        font-size: 1em;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Face Massage</h1>
+    </header>
+    <!-- Types of Face Massage Section -->
+    <div class="section">
+        <h2>Types of Face Massage</h2>
+        <div class="massage-types">
+            <div class="massage-type">
+                <img src="images/aloe.jpg" alt="Aloe Vera Massage">
+                <h3>Aloe Vera Massage</h3>
+                <p>Hydrates and soothes the skin while reducing inflammation.</p>
+            </div>
+            <div class="massage-type">
+                <img src="images/mix_fruit.jpg" alt="Mix Fruit Massage">
+                <h3>Mix Fruit Massage</h3>
+                <p>Rich in vitamins and antioxidants for a radiant complexion.</p>
+            </div>
+            <div class="massage-type">
+                <img src="images/chocolate.jpg" alt="Chocolate Massage">
+                <h3>Chocolate Massage</h3>
+                <p>Boosts mood and nourishes the skin deeply.</p>
+            </div>
+            <div class="massage-type">
+                <img src="images/charcole.jpg" alt="Green Tea Massage">
+                <h3>Charcole Massage</h3>
+                <p>Detoxifies the skin and fights free radicals.</p>
+            </div>
+            <div class="massage-type">
+                <img src="images/gold.jpg" alt="Gold Facial Massage">
+                <h3>Gold Facial Massage</h3>
+                <p>Rejuvenates and enhances the skin’s natural glow.</p>
+            </div>
+            <div class="massage-type">
+                <img src="images/papaya.jpg" alt="Aromatherapy Massage">
+                <h3>Papaya Massage</h3>
+                <p>Relieves stress with the use of essential oils.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section massage-process">
+        <h2>Process of Face Massage</h2>
+        <div class="process-container">
+            <ol>
+                <li>1.)  Start by cleansing your face thoroughly.</li>
+                <li>2.)  Apply a suitable facial oil or moisturizer.</li>
+                <li>3.)  Begin with gentle circular motions on the cheeks.</li>
+                <li>4.)  Massage upward on the forehead and downward on the temples.</li>
+                <li>5.)  Use light pressure on the area around the eyes.</li>
+                <li>6.)  Focus on the jawline and chin with upward strokes.</li>
+                <li>7.)  Finish by tapping gently all over the face to enhance circulation.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Why Face Massage Section -->
+        <div class="section">
+            <h2>Why Face Massage is Healthy for Skin</h2>
+            <div class="benefits">
+                <div class="benefit">
+                    <img src="images/blood.jpg" alt="Improves blood circulation">
+                    <p>Improves blood circulation, resulting in a natural glow.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/relax.jpg" alt="Reduces stress and promotes relaxation">
+                    <p>Reduces stress and promotes relaxation.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/detox.jpg" alt="Helps in detoxification">
+                    <p>Helps in detoxification by stimulating lymphatic drainage.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/collagen.jpg" alt="Boosts collagen production">
+                    <p>Boosts collagen production, reducing fine lines and wrinkles.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/elasticity.jpg" alt="Enhances skin elasticity">
+                    <p>Enhances skin elasticity and firmness.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/relief.jpg" alt="Relieves tension in facial muscles">
+                    <p>Relieves tension in facial muscles.</p>
+                </div>
+                <div class="benefit">
+                    <img src="images/absorption.jpg" alt="Improves skincare absorption">
+                    <p>Improves the absorption of skincare products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+        
+    </div>
+</body>
+</html>
